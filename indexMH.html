@@ -1,50 +1,172 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Machine Learning </title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-</head>
-<body>
+<html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Matthew Hart">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Positive Contributions of Computing · Machine Learning</title>
 
-<div class="container-fluid">
-  <h1>Applications of computing that make positive contributions to society</h1>
-  <h2>Machine Learning </h2>
-  <p>Machine Learning is allowing for the speed of solutions to problems within many different fields.
-  From Physics and Mathematics to Biology and Industry, fields are getting revolutionised by the introduction of machine learning.
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/blog/">
 
-
-  <h3>Biology</h3>
-  In Biology we're seeing diseases such as sepsis be diagnosed much quicker and much more proficiently by machines,
-  Machines trained on different genetic data can identify where the material has come from and its gene expression to get the expected patient response.
-  Allowing for the differentiation of other diseases from sepsis in patients: <a href="https://medicalxpress.com/news/2022-10-machine-enables-diagnosis-elusive-global.html"> Taken from here</a>
-
-  <h3>Industry</h3>
-  In Industry, new metals are usually laboriously made by scientists with very common metals like iron and combinining them with more expensive metals to see the effects. 
-  But after training a machine learning model on hundreds of different metal alloys and their properties the model could then predict and suggest different combinations of metals
-  to allow for production of useful properties. In this case invariability of size when temperatures are changed greatly. Metals can contract and expand due to heat and in industry.
-  If a metal were to expand too much the system it is a part of could break down. This improvement speeds up the process of finding new alloys to be used in industry as the labour of 
-  scientists is not as necessary for testing. The predictions are given and the tests are made from those predictions as opposed to blind trial and error: <a href="https://www.technologyreview.com/2022/10/25/1062104/machine-learning-new-metals/"> Taken from here</a>
-  <h3>Physics</h3>
-  In Physics our understanding of protons is being deepened with the introduction of Machine Learning.
-  The speed of analysis of data provided has been sped up tremendously allowing for many quanitities to be processed at once.
-  Usually analysis takes years, with the new machine learning tool OmniFold it takes minutes. And although processing multiple datapoints
-  had been possible previously, it had not been able to account for distortions in the detector now that it can.
-  The processing of data from these particle experiments has been much faster. <a href="https://www.eurekalert.org/news-releases/969015"> Taken from here</a>
-  <h3>Mathematics</h3>
-  Mathematics has had its matrix multiplication speed increased with reinforcement learning. The efficiency of matrix multiplication has been increased
-  shaving off 2 more multiplications from matrix multiplication reducing computation time.
-  AlphaTensor was the network behind this discovery, although 2 steps may not seem like much, when millions of matrix multiplications are taking place
-  2 multiplications add up much faster. The matrix multiplication was treated like a single player game and the goal given to the computer was to find the least possible
-  steps to perform the full multiplication which it has succeeded at. <a href="https://arstechnica.com/information-technology/2022/10/deepmind-breaks-50-year-math-record-using-ai-new-record-falls-a-week-later/"> Taken from here</a>
-  </p>
-  <address>
     
-  </address>
+
+    
+
+<link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/5.2/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/5.2/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/5.2/assets/img/favicons/safari-pinned-tab.svg" color="#712cf9">
+<link rel="icon" href="/docs/5.2/assets/img/favicons/favicon.ico">
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900&amp;display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="blog.css" rel="stylesheet">
+  </head>
+  <body>
+    
+<div class="container">
+  <header class="blog-header lh-1 py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+      </div>
+      <div class="col-4 text-center">
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="nav-scroller py-1 mb-2">
+    <nav class="nav d-flex justify-content-between">
+      <a class="p-2 link-secondary" href="#">World</a>
+      <a class="p-2 link-secondary" href="#">U.S.</a>
+      <a class="p-2 link-secondary" href="#">Technology</a>
+      <a class="p-2 link-secondary" href="#">Design</a>
+      <a class="p-2 link-secondary" href="#">Culture</a>
+      <a class="p-2 link-secondary" href="#">Business</a>
+      <a class="p-2 link-secondary" href="#">Politics</a>
+      <a class="p-2 link-secondary" href="#">Opinion</a>
+      <a class="p-2 link-secondary" href="#">Science</a>
+      <a class="p-2 link-secondary" href="#">Health</a>
+      <a class="p-2 link-secondary" href="#">Style</a>
+      <a class="p-2 link-secondary" href="#">Travel</a>
+    </nav>
+  </div>
 </div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-</body>
-</html>
+
+<main class="container">
+  <div class="p-4 p-md-5 mb-4 rounded text-bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 fst-italic">Positive Contributions of Computing</h1>
+    </div>
+  </div>
+
+      <article class="blog-post">
+        <h2 class="blog-post-title mb-1">Machine Learning</h2>
+        <p class="blog-post-meta">October 26, 2022 by <a href="#">Matthew</a></p>
+
+        <p>Machine Learning is allowing for the speed of solutions to problems within many different fields.
+            From Physics and Mathematics to Biology and Industry, fields are getting revolutionised by the introduction of machine learning.</p>
+        <hr>
+        <h2>Biology</h2>
+        <p> In Biology we're seeing diseases such as sepsis be diagnosed much quicker and much more proficiently by machines,
+            Machines trained on different genetic data can identify where the material has come from and its gene expression to get the expected patient response.
+            Allowing for the differentiation of other diseases from sepsis in patients: <a href="https://medicalxpress.com/news/2022-10-machine-enables-diagnosis-elusive-global.html"> Taken from here</a></p>
+        <h2>Industry</h2>
+        <p>In Industry, new metals are usually laboriously made by scientists with very common metals like iron and combinining them with more expensive metals to see the effects. 
+            But after training a machine learning model on hundreds of different metal alloys and their properties the model could then predict and suggest different combinations of metals
+            to allow for production of useful properties. In this case invariability of size when temperatures are changed greatly. Metals can contract and expand due to heat and in industry.
+            If a metal were to expand too much the system it is a part of could break down. This improvement speeds up the process of finding new alloys to be used in industry as the labour of 
+            scientists is not as necessary for testing. The predictions are given and the tests are made from those predictions as opposed to blind trial and error: <a href="https://www.technologyreview.com/2022/10/25/1062104/machine-learning-new-metals/"> Taken from here</a></p>
+        <h2>Physics</h2>
+        <p>In Physics our understanding of protons is being deepened with the introduction of Machine Learning.
+            The speed of analysis of data provided has been sped up tremendously allowing for many quanitities to be processed at once.
+            Usually analysis takes years, with the new machine learning tool OmniFold it takes minutes. And although processing multiple datapoints
+            had been possible previously, it had not been able to account for distortions in the detector now that it can.
+            The processing of data from these particle experiments has been much faster. <a href="https://www.eurekalert.org/news-releases/969015"> Taken from here</a></p>
+        <h2>Mathematics</h2>
+        <p>Mathematics has had its matrix multiplication speed increased with reinforcement learning. The efficiency of matrix multiplication has been increased
+            shaving off 2 more multiplications from matrix multiplication reducing computation time.
+            AlphaTensor was the network behind this discovery, although 2 steps may not seem like much, when millions of matrix multiplications are taking place
+            2 multiplications add up much faster. The matrix multiplication was treated like a single player game and the goal given to the computer was to find the least possible
+            steps to perform the full multiplication which it has succeeded at. <a href="https://arstechnica.com/information-technology/2022/10/deepmind-breaks-50-year-math-record-using-ai-new-record-falls-a-week-later/"> Taken from here</a></p>
+      </article>
+</main>
+
+<footer class="blog-footer">
+
+  <p>
+    <a href="#">Back to top</a> 
+  </p>
+  <p>
+    Author Info:
+  </p>
+</footer>
+
+
+    
+  
+
+</body></html>
